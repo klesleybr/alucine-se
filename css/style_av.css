@@ -1,0 +1,491 @@
+/*---------------------------- FONTES -----------------------------------------*/
+/*Nunito*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+/*Monoton*/
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+/*PT SERIF: font-family: 'PT Serif', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*Lora: font-family: 'Lora', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+/*Libre Barsekvile: font-family: 'Libre Baskerville', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+/*---------------------------- FONTES -----------------------------------------*/
+*{
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif; 
+    scroll-behavior: smooth;  
+    text-decoration: none;
+}
+body{
+    background-color: rgb(224, 224, 222);
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #535151;
+    border-radius: 10px;
+}
+main p a{
+    color: #b41010;
+    font-weight: bold;
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+/*-----------------------------EDIÇÃO DE CABEÇALHO DA PÁGINA ----------------------------*/
+#cabecalho{
+    display: flex;
+    background-color:rgb(53, 53, 53);
+    color:rgb(223, 223, 223);
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+#cabecalho img{
+    width: 60px;
+    margin-left: 10px;
+}
+#cabecalho #containerC{
+    display: flex;
+    width: 1400px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#cabecalho #logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#cabecalho #logo p{
+    font-size: 40px;
+    font-family: 'Monoton', cursive;
+    color: #FFF;
+}
+#cabecalho #menu{
+    display: flex;
+}
+#cabecalho ul li{
+    list-style: none;
+}
+#cabecalho ul a{
+    display: block;
+    padding: 10px 20px;
+    font-size: 23px;
+    text-decoration: none;
+    color: rgb(209, 208, 208);
+}
+#cabecalho .submenu a{
+    font-size: 21px;
+}
+
+#cabecalho #menu>li{
+    margin: auto 5px;
+    border-radius: 10px;
+    transition: all 0.13s linear;
+    position: relative;
+}
+#cabecalho #menu>li:hover{
+    /*background-color: rgba(2, 65, 107, 0.808);*/
+    font-weight: bold;
+    
+}
+#cabecalho #menu li:hover a{
+    color: #FFF;
+}
+#cabecalho ul li .submenu{
+    display: none;
+    margin-top: 3px;
+    width: 187px;
+    z-index: 1;
+    position: absolute;
+    right: -37px;
+}
+#cabecalho ul .submenu li{
+    margin-bottom: 1px;
+    background-color: rgba(2, 65, 107, 0.897); /*2, 65, 107*/
+    border-radius: 5px;
+    transition: all 0.13s linear;
+}
+#cabecalho ul li:hover .submenu{
+    display: block;
+}
+#cabecalho .submenu li:hover{
+    background-color:rgb(56, 129, 177);
+}
+/*-----------------------------------------------------------------------------*/
+
+/*-------------------- EDIÇÃO DA INTRODUÇÃO DA DISCOGRAFIA ---------------------------*/
+#discografia{
+    display: block;
+    background-color: white;
+    width: 1150px;
+    margin: 50px auto;
+    position: relative;
+    padding-bottom: 50px;
+}
+#discografia h1{
+    text-align: center;
+    font-size: 60px;
+    padding: 10px 0;
+    border-bottom: 1px solid #0000003f;
+    margin: 10px;
+}
+#discografia>h2{
+    margin-left: 80px;
+}
+#discografia p{
+    font-size: 18px;
+    padding: 3px 25px;
+    text-align: justify;
+}
+#discografia #lista-container .lista-disco h3{
+    margin: 5px;
+}
+#discografia #lista-container{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    gap: 80px;
+}
+
+#discografia .lista-disco ul{
+    list-style-position: inside;
+}
+#discografia .lista-disco ul li{
+    margin-bottom: 5px;
+}
+#discografia .lista-disco ul li a{
+    text-decoration: none;
+    color: #440404;
+}
+#discografia .nota{
+    margin-top: 15px;
+    display: block;
+    width: 800px;
+    font-style: italic;
+}
+/*--------------------------------------------------------------*/
+
+/*-------------------- EDIÇÃO DA DISCOGRAFIA EM SI ---------------------------*/
+#discografia .discografia-midia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+#discografia .discografia-midia div{
+    width: 900px;
+}
+#discografia .discografia-midia div h2{
+    text-align: center;
+    font-style: italic;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+#discografia .discografia-midia div .ficha-tec{
+    text-align: center;
+    border-left: 5px  solid rgba(2, 65, 107, 0.829);
+    line-height: 25px;
+    margin: 20px 0;
+    line-height: 30px;
+}
+#discografia .discografia-midia div .ficha-tec p span{
+    text-decoration: underline;
+}
+#discografia .discografia-midia .youtube{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+#discografia .discografia-midia #pessoal-ceara h2, #discografia .discografia-midia #paralelas h2{
+    margin-bottom: 0;
+}
+#discografia .discografia-midia #pessoal-ceara p, #discografia .discografia-midia #paralelas p{
+    margin-bottom: 8px;
+}
+/*--------------------------------------------------------------*/
+
+/*-------------------- EDIÇÃO DA INTRODUÇÃO DOS VÍDEOS ---------------------------*/
+main{
+    display: block;
+    background-color: white;
+    width: 1150px;
+    margin: 50px auto;
+    position: relative;
+}
+main h1{
+    text-align: center;
+    font-size: 60px;
+    padding: 10px 0;
+    border-bottom: 1px solid #0000003f;
+    margin: 10px;
+}
+main>h2{
+    margin: 15px 80px;
+}
+main p{
+    font-size: 18px;
+    padding: 3px 50px;
+    text-align: justify;
+    line-height: 27px;
+}
+#discografia p{
+    padding: 3px 50px;
+}
+main #lista-container .lista-video h3{
+    margin-bottom: 10px;
+}
+#pag-video #lista-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+main .lista-video ul li{
+    margin-bottom: 5px;
+    list-style: none;
+}
+main .lista-video ul li a{
+    display: block;
+    text-decoration: none;
+    color: #b41010;
+    text-align: center;
+}
+/*--------------------------------------------------------------*/
+
+/*-------------------- EDIÇÃO DOS VÍDEOS EM SI ---------------------------*/
+#pag-video section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+#pag-video section div{
+    width: 900px;
+    margin-bottom: 8px;
+}
+main section div h2{
+    text-align: center;
+    font-style: italic;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+#pag-video section div .ficha-tec{
+    text-align: center;
+    border-left: 5px  solid rgba(2, 65, 107, 0.829);
+    line-height: 25px;
+    margin-top: 15px;
+}
+#pag-video section div a{
+    color: #b41010;
+    font-weight: bold;
+}
+#pag-video section div a:hover{
+    text-decoration: underline;
+}
+main section .youtube{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+main section #doc-globo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+main section #doc-globo h2{
+    margin-bottom: 0;
+}
+main section #doc-globo img{
+    width: 300px;
+    padding: 20px 0;
+}
+#doc-globo .youtube{
+    margin-top: 15px;
+}
+#pag-video div iframe{
+    border: none;
+    width: 683px;
+    height: 384px;
+}
+/*--------------------------------------------------------------*/
+
+/*-------------------- EDIÇÃO DAS IMAGENS ---------------------------*/
+#pag-fotos a{
+    color: #b41010;
+    font-weight: bold;
+}
+#pag-fotos a:hover{
+    text-decoration: underline;
+}
+#pag-fotos .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px 30px;
+    gap: 5px;
+}
+#pag-fotos .container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all .15s linear;
+}
+#pag-fotos .container img:hover{
+    transform: scale(0.98);
+}
+/*--------------------------------------------------------------*/
+
+/*------------------------- EDIÇÃO BOTÃO DE APOIO -----------------------*/
+#apoio-biografia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 90px;
+    bottom: 70px;
+}
+#apoio-biografia img{
+    height: 42px;
+}
+#apoio-biografia #botao-bio p{
+    font-size: 27px;
+    font-weight: bold;
+    color: #000;
+    padding: 0;
+}
+#apoio-biografia #botao-bio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #FFF;
+    width: 150px;
+    height: 60px;
+    border-radius: 20px;
+    border: 1px solid #c0bfbf;
+    box-shadow: 0px 20px 25px #535151;
+    animation-name: anima-btn;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    text-decoration: none;   
+    transition: all .2s linear;
+}
+@keyframes anima-btn{
+    0%{
+        transform: scale(1);
+    }
+    50%{transform: scale(1.02);}
+}
+#apoio-biografia #botao-bio:hover{
+    background-color: #aaa;
+}
+/*----------------------------------------------------------------------*/
+
+/*------------------------- EDIÇÃO DO RODAPÉ -----------------------*/
+#rodape{
+    background-color: rgb(53, 53, 53);
+    height: 295px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#rodape #acima{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;   
+}
+#rodape div{
+    margin-bottom: 20px;
+}
+
+#rodape #abaixo{
+    margin: 0 auto;
+    width: 1000px;
+}
+#rodape #acima #apoie-projeto{
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    text-align: justify;
+    color: #FFF;
+    width: 330px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 10px;
+}
+#rodape #acima #apoie-projeto p{
+    font-size: 14px;
+}
+#rodape #acima #apoie-projeto button, #apoie-projeto button a{
+    padding: 10px;
+    background-color: #f00606;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+#rodape #acima #info ul li{
+    margin: 15px auto;
+    list-style: none;
+}
+#rodape #acima #info ul li a{
+    color: #CCC;
+}
+#rodape #redes-sociais{
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #ffffff38;
+    padding-left: 20px;
+    height: 80px;
+}
+
+#rodape #redes-sociais img{
+    height: 50px;
+    margin-right: 20px;
+}
+#rodape #redes-sociais img:hover{
+    transform: scale(1.1)
+}
+#rodape #abaixo{
+    color: #CCC;
+    text-align: center;
+}
+#rodape #abaixo p{
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+#rodape #abaixo #direitos{
+    font-size: 10px;
+    margin-bottom: -15px;
+}
+/*------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
