@@ -497,7 +497,7 @@ main #postagens #post-belchior .post>a{
 /*------------------------- EDIÇÃO DO RODAPÉ -----------------------*/
 #rodape{
     background-color: rgb(53, 53, 53);
-    height: 295px;
+    height: 315px;
     display: flex;
     flex-direction: column;
     justify-content: center;
